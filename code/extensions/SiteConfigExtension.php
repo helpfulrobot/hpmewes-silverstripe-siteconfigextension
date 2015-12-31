@@ -35,7 +35,7 @@ class SiteConfigExtension extends DataExtension
 
         $latField = new TextField('Lat', _t('SiteConfigExtension.LATITUDE', 'Latitude'));
         $lngField = new TextField('Lng', _t('SiteConfigExtension.LONGITUDE', 'Longitude'));
-        $lngField->setDescription(_t('SiteConfigExtension.GEOINFO','Get latitude & longitude values here: <a href="http://itouchmap.com/latlong.html" target="_blank">itouchmap.com</a>.'));
+        $lngField->setDescription(_t('SiteConfigExtension.GEOINFO', 'Get latitude & longitude values here: <a href="http://itouchmap.com/latlong.html" target="_blank">itouchmap.com</a>.'));
 
         $fields->addFieldToTab('Root.'.$tabTitle, new TextField('Company', _t('SiteConfigExtension.COMPANY', 'Company')));
         $fields->addFieldToTab('Root.'.$tabTitle, new TextField('SiteOwner', _t('SiteConfigExtension.SITEOWNER', 'Owner')));
@@ -55,7 +55,5 @@ class SiteConfigExtension extends DataExtension
         $fields->addFieldToTab('Root.'.$tabTitle, new TextField('Google', _t('SiteConfigExtension.GOOGLE', 'Google+')));
 
         $fields->addFieldToTab('Root.'.$tabTitle, new HtmlEditorField('Message', _t('SiteConfigExtension.MESSAGE', 'Message')));
-
     }
-
 }
